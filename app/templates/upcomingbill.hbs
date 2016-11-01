@@ -1,0 +1,8 @@
+<h1>Comming up bills: </h1>
+
+{{#each model.results as |bill|}}
+  <h3>
+    {{bill.context}}
+  </h3>
+  <a href={{bill.url}}><h4>{{bill.legislative_day}}</h4></a>
+{{/each}}
