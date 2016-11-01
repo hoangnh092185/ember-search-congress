@@ -1,0 +1,10 @@
+{{bill-search search="search"}}
+
+
+<ul>
+  {{#each model.results as |bill|}}
+  <h4>{{bill.short_title}}</h4>
+  <p>{{bill.last_version_on}}</p>
+  {{/each}}
+</ul>
+{{outlet}}
