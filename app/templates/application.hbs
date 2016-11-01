@@ -1,0 +1,19 @@
+<div class= "container">
+  <header class= "jumbotron">
+    <nav class="navbar navbar-inverse top-bar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          {{#link-to 'index' class="navbar-brand"}}<span class="nav-text">Enlightened Citizenry</span>{{/link-to}}
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="nav navbar-nav">
+                {{#link-to 'index' tagName="li"}}<a href=""><span class="nav-text">Home</span></a>{{/link-to}}
+                {{#link-to 'committee' 1 tagName="li"}}<a href="/committee"><span class="nav-text">Committees</span></a>{{/link-to}}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  {{outlet}}
+  <hr>
+</div>

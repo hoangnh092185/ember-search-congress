@@ -1,0 +1,13 @@
+<h4>Total Pages: {{pages}}</h4>
+<br>
+{{#if canGoBack}}
+  <button {{action 'back'}}>Back</button>
+{{else}}
+  <button {{action 'back'}} disabled=true>Back</button>
+{{/if}}
+<h4>Page: {{page.page}}</h4>
+{{#if canGoForward}}
+  <button {{action 'next'}}>Next</button>
+{{else}}
+  <button {{action 'next'}} disabled=true>Next</button>
+{{/if}}

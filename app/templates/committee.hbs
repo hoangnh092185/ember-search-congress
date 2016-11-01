@@ -1,0 +1,12 @@
+{{page-buttons count=model.count page=model.page back="back" next="next"}}
+
+
+<ul>
+  {{#each model.results as |committee|}}
+    <li>
+      <h4>Chamber: {{committee.chamber}}</h4>
+      <p>Name: {{committee.name}}</p>
+      <p>{{#link-to 'subcommittee' committee.committee_id}}View Subcommittees{{/link-to}}</p>
+    </li>
+  {{/each}}
+</ul>
