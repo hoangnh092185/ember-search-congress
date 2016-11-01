@@ -1,9 +1,9 @@
 {{page-buttons count=model.count page=model.page back="back" next="next"}}
-{{bill-search search="search"}}
+{{bill-search search="search" model=model}}
 
-<ul>
+<!-- <ul>
   {{#each model.results as |bill|}}
   <h4>{{bill.short_title}}</h4>
   <p>{{#link-to 'billdetail' bill.bill_id}}{{bill.last_version_on}}{{/link-to}}</p>
   {{/each}}
-</ul>
+</ul> -->

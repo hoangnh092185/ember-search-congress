@@ -5,3 +5,10 @@
     <button type="submit" name="button">Search</button>
   </form>
 </div>
+
+
+<ul>
+  {{#each sortedBills as |bill|}}
+  {{bill-detail bill=bill}}
+  {{/each}}
+</ul>
